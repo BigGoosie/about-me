@@ -16,9 +16,3 @@ const Avatar: React.FC = () => {
 }
 
 export default Avatar;
-
-/*
-      <h1 className="display-name">
-        <Glitch text="Goose" /> <span className="separator">|</span> <Glitch text="[Redacted]" />
-      </h1>
-*/
