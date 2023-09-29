@@ -1,13 +1,12 @@
 import React from 'react';
-import { Avatar, Background } from '../elements';
-import AboutMe from './About';
+import { Avatar, Background, About } from '../elements';
 
 const MainPage: React.FC = () => {
     return (
         <div className="background">
             <Background/>
             <Avatar/>
-            <AboutMe/>
+            <About/>
         </div>
     );
 }

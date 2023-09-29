@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './About.css';  // Adjust with your CSS file name
+import React from 'react';
+import './About.css';
 
 import { Steam, Backpack, Discord } from '../images';
 const About: React.FC = () => {
