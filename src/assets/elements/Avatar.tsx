@@ -9,7 +9,7 @@ const Avatar: React.FC = () => {
       <img src={avatarGif} className="avatar" />
       <div style={{ height: '20px', width: '100%' }}></div>
 
-      <div className="text-container"><Glitch text="*Goose or*" /></div>
+      <div className="text-container"><Glitch text="  Goose  " /></div>
       <div className="text-container"><Glitch text="[Redacted]" /></div>
     </div>
   );

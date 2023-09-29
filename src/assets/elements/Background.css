@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #4B6EAF, #2F4A7D 50%, #1B2735 100%);
+}
+
+.star {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    animation: FloatAnimation 7s infinite alternate;
+    z-index: -2;
+}
+
+.star::before, .star::after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    left: 50%;
+}
+
+.star::before {
+    width: 2px;
+    height: 10px;
+    top: -4px;
+    transform: translateX(-50%);
+}
+
+.star::after {
+    width: 10px;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+@keyframes FloatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}

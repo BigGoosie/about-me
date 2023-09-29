@@ -1,11 +1,13 @@
 import React from 'react';
-import { Avatar } from '../elements';
-import "./MainPage.css"
+import { Avatar, Background } from '../elements';
+import AboutMe from './About';
 
 const MainPage: React.FC = () => {
     return (
-        <div className="main-page-container">
+        <div className="background">
+            <Background/>
             <Avatar/>
+            <AboutMe/>
         </div>
     );
 }

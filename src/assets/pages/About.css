@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Martian+Mono&display=swap');
+
+@keyframes float {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes breathe {
+    0% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.05); }
+    100% { transform: translateX(-50%) scale(1); }
+}
+
+.about-me-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    color: #E1E9EE;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    animation: float 3s infinite, breathe 3s infinite;
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10px;
+}
+
+.link-prefix-image {
+    height: 32px;  /* Adjust as needed */
+    width: 32px;   /* Adjust as needed */
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* spacing between About Me and links section */
+}
+
+.custom-link {
+    flex: 1; /* ensures all links evenly split the width */
+    text-align: center;
+    padding: 10px; /* for better clickability */
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
